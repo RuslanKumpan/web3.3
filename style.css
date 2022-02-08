@@ -1,0 +1,111 @@
+@media screen and (min-width: 320px){
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    body{
+        margin: 0;
+    }
+    ul{
+        list-style-type: none;
+    }
+    
+    
+    a{
+        text-decoration: none;
+        color: orange;  
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid black;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    input, select, textarea{
+        outline: none;
+        margin: 10px 0;
+        margin-right: 5px;
+        padding: 10px;
+        border: 1px solid#e5e5e5;
+    }
+    input[type=submit],[type=radio], [type=date]{
+        cursor: pointer;
+    }
+    input[type=submit]{
+        background-color: #fff;
+    }
+    textarea{
+        resize: none;
+    }
+    .container{
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .header__logo{
+        float: left;
+        margin-right: 20px;
+    }
+    .header__title{
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .nav__link li{
+        margin-right: 10px;
+    }
+    .flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .table{ 
+        display: block;
+        order: 1;
+    }
+    tr:nth-child(even){
+        background-color: #e5e5e5;
+    }
+    .td__colspan{
+        text-align: center;
+    }
+    .footer{
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .footer__inner{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 768px){
+
+    .nav__link{
+        display: flex;
+    }
+    .flex-box{
+        display: block;
+    }
+
+}
+@media screen and (min-width: 960px){
+    .header, .footer{
+        width: 100vw;
+    }
+}
